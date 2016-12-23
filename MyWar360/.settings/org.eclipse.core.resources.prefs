@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/qianhuan/yxgsd/qihoo360/SdkMainActivity.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/payment/Constants.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/payment/QihooPayInfo.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/utils/QihooUserInfo.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/utils/QihooUserInfoListener.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/utils/QihooUserInfoTask.java=UTF-8
+encoding//src/com/qianhuan/yxgsd/qihoo360/wxapi/WXEntryActivity.java=UTF-8

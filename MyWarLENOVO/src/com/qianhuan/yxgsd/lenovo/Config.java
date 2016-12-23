@@ -1,0 +1,14 @@
+package com.qianhuan.yxgsd.lenovo;
+
+
+
+/**
+ * @author xiaowei
+ * 2016-10-11 下午2:30:56
+ * 设置appid 和 appkey
+ */
+public class Config {
+
+	public static final String appid   = "1608101187731.app.ln";
+	public static final String appkey  = "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAMdd22fXOZoVnP4zBSAVvFYVhKxsyNKrSF9FDQ5a2ZLtCKBeNkdZjSeKbIZBgvzSea3p+Vmkj3MDXfBZRgy70gNpSTvd5KTSsT66kdEOYRM8HIufFVsDejlpLoppV97PIrF3/rmnBiTsynA45us4uwjK1ucWYSvd7TtAQM7A9RfZAgMBAAECgYEAnXJ9LQPnRM3e304RtSYVR/LUhYugCeglTr/ssLKE86jo0CW3Ph/1/w0t6dVhCiN63yNRvj7c3xsAnCkUzkeicZKpUAOrA33S+dYGklXPmNjqclS2+sF7RUgRS8sq1VE79b1NV5+MdOmYY73xkVONfs3QqEKO7lhgutFyCvRKKxUCQQD5WD/9XtLUs4auDDSbxAqrQdquCVWnBmTUwkQUTkDMTA2Oq7AxRVhcHeDsUtP1WAFPUEZCWfItIegQZzulu/uDAkEAzLAce4BoikhUNwmQVmka513bpW2VDPeQPxkqIbPxHdzxHX8SwSCy0KRDabwYJeN9bEO9kw3ajdWNfeL69bm0cwJBAPgOEWrQ4NF14DBaOCQWPb7t/s1QwAMv2zPGJ9BDoTcdGgerSddac3MAzniMVg0oBfWPmLX9oW3A44seCDry7l0CQAEUpPHZ+bNRMnCf8k0ifOvfyPsUmwbYf8B1h41p/8nikrtPInA2lfsYAusZ/R6mFtFtgiC2oALDr92MRzro4hUCQQCozE0iKSZLAxe96pc9Fn+pWHFZr4ipKMhsfw2AxjxycveyU+6B+QGIhKa1e+Lq08kMQQPnDtPjlJqqOJHdG2Kt";
+}

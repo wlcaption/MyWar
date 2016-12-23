@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TTSDKV2</string>
+    <string name="main_logout">登出</string>
+    <string name="main_pay">支付</string>
+    <string name="main_showflowtview">show</string>
+    <string name="main_hideflowtview">hide</string>
+</resources>

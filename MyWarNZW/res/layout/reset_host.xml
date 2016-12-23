@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="请输入域名地址:"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/host_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="形如:http://sdk.muzhiwan.com"
+        android:text="http://sdk.muzhiwan.com"
+        android:padding="10dp" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="请配置支付:"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/payset_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="1"
+        android:hint="输入1代表32位，输入0代表64位程序，默认为32位程序"
+        android:padding="10dp" />
+    
+    <Button 
+        android:id="@+id/reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

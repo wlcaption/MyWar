@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tencent.tmgp.yxgsd" android:versionName="1.0" android:versionCode="1" android:installLocation="preferExternal">
+  <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+
+  <uses-sdk
+      android:minSdkVersion="8"
+      android:targetSdkVersion="17" />
+
+  <!-- TODO GAME SDK接入必须权限模块 START -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+  <!-- TODO GAME SDK Midas接入配置 设置屏幕兼容声明 START -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <supports-screens
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true" />
+  
+   <application android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@mipmap/ic_launcher" android:label="@string/app_name">
+    <activity android:name="com.tencent.tmgp.yxgsd.MainActivity" android:label="@string/app_name" android:screenOrientation="fullSensor" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    </activity>
+
+    <!-- TODO GAME SDK接入YSDK登陆接入配置 START -->
+    <activity
+        android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="sensor"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+    </activity>
+    <!-- TODO GAME SDK接入YSDK登陆接入配置 END -->
+
+    <!-- TODO GAME SDK QQ接入配置 START -->
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="tencent1104936059" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <!-- TODO GAME SDK QQ接入配置 END -->
+
+
+    <!-- TODO GAME SDK 微信接入配置 START -->
+    <activity
+        android:name="com.tencent.tmgp.yxgsd.wxapi.WXEntryActivity"
+        android:excludeFromRecents="true"
+        android:exported="true"
+        android:label="WXEntryActivity"
+        android:launchMode="singleTop"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:taskAffinity="com.tencent.tmgp.yxgsd.diff">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="wx667a86899f360d06" />
+      </intent-filter>
+    </activity>
+    <!-- TODO GAME SDK 微信接入配置 END -->
+
+
+    <!-- TODO GAME SDK Midas接入配置 START -->
+    <activity
+        android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize" />
+    <activity
+        android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:exported="true" />
+
+    <activity
+        android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+        android:launchMode="singleTop"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="orientation|keyboardHidden"
+        android:exported="true" >
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:scheme="qwallet100703379"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateAlwaysHidden"/>
+    <!-- TODO GAME SDK Midas接入配置 END -->
+  </application>
+
+</manifest>

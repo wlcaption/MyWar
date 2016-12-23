@@ -1,0 +1,13 @@
+package com.qianhuan.yxgsd.coolpad;
+
+public class PayConfig {
+	/**
+	 * 配置初始化登录支付所需要的key
+	 */
+	public static final String appid      = "5000004521";
+	public static final String privateKey = "MIICXAIBAAKBgQCm79wKE1JgTO0ecEZCxuiONm104WOWtPoSt6KMmWesrx42eq+8+3jQQeobOvaSWYayklGMp6wDP/HAT1C6sqtCMfJIrnp476W8gZX/xPNHh/XzoZ50zEnqhRgjdOddjtn634dxKDScNWHmCeONljxih3zlTNY2lG5mJuDGHINAIwIDAQABAoGASPkAzsazc7Us0elyTS516fSQ1E7SIcbqqdPsElncn/fM1TO8Lngez6qAk3aq4j6QSu77BukkoCcLnm0NdQ81HPyBw7Ej7i7FOVJLek29g8S8GxY+p2zi/4U18MN25Y/74MiE5VH9VbAlsJSThN6ifhUEHtvQoROlp8B3Nf5aoUECQQDo9byOQC79mbIcTNwFcEdCUsHgeyyngLdNLMdyQS30AlTQUBB0OdfCpr/2Iclc1y7sZz3h1MOCMipKjSEaYKx/AkEAt3KAYDaT1yMPHkE8HWCsUxQTfmxvbkEeRT0pBsxsTvr1A8yFmdzRDXkojxv40gdd3B6OLuNzv3aJunNT5AhqXQJBAI+HZ6bVEJ6a5UveZujK5nyMdHsUKM0C1uyrnC5ezis6jHrT+W9CfBanmjnRUzjqMzTf3xaWeeZrdfb8wNp5mY0CQA7vq7QpvW/O0vRLq3FY5a79+3hXq9r2Qliw2h5LlqX3mOtuQ5J7gCnwq3S7ek7feqzpb/oxWsNEC4K60SHH7aECQGkpvkhU2ZwZMUaBfphtKq6RZ7koR6D6DGP6efExageDTCl1GcVX6M9SM2/bRNPfenkqShR+QnAeoEzmwZgk1+Q=";
+	public static final String publicKey  = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDHEFJMnrXcPe9Xg13xPTcQmsvk/gjcRB1MX2ANJ57v7cYHojeOnQl8W57STS82B9KZUzp8fo5BYJ8yOpFdC/0q4JuuBDYGKJgfTgWaN82dgFNWUs7xDehQErBhHB6550KpmfSodvYkFSlbhfLdQmfyi53zP9++OVLHvUEPuOXKQIDAQAB";
+	public static final String appKey     = "8c9918a5c383441693cd848485df6125";
+	public static final String notifurl   = "";
+
+}
